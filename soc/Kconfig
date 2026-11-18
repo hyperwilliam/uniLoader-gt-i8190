@@ -6,6 +6,10 @@ config EXYNOS
 	bool
 	default n
 
+config NOVATHOR
+	bool
+	default n
+
 config FREESCALE
 	bool
 	default n
@@ -128,6 +132,12 @@ config SONY
 		select EXYNOS
 		help
 		  Say Y if your device uses Samsung Exynos9820 SoC
+
+	config ST8500
+		bool "Support for NovaThor U8500"
+		select NOVATHOR
+		help
+		  Say Y if your device uses NovaThor U8500 SoC
 
 	config EXYNOS_990
 		bool "Support for Exynos 990"

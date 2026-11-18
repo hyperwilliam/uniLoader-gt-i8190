@@ -303,6 +303,13 @@ menu "Device Support"
 		help
 		  Say Y if you want to include support for Samsung Galaxy S7
 
+	config SAMSUNG_GOLDEN
+		bool "Support for Samsung Galaxy S3 Mini"
+		default n
+		depends on ST8500
+		help
+		  Say Y if you want to include support for Samsung Galaxy S3 Mini
+
 	config SAMSUNG_J4LTE
 		bool "Support for Samsung Galaxy J4"
 		default n
